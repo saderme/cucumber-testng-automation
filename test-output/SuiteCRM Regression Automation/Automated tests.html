@@ -1,0 +1,2426 @@
+<html>
+<head>
+<title>TestNG:  Automated tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Automated tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 05 13:26:42 GMT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>904 seconds (904227 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.app.runners.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.app.runners.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a task", "Creating tasks"<br/>
+<a href="#Output-252738640" onClick='toggleBox("Output-252738640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-252738640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-252738640">
+<div "result">I logged into suiteCRM (SKIPPED)</div><br/>
+<div "result">I click on create task (SKIPPED)</div><br/>
+<div "result">Set subject as &quot;Refactor code&quot; (SKIPPED)</div><br/>
+<div "result">Set status as &quot;In Progress&quot; (SKIPPED)</div><br/>
+<div "result">Start date is todays date (SKIPPED)</div><br/>
+<div "result">Due date is 25 days after todays date (SKIPPED)</div><br/>
+<div "result">Set &quot;Medium&quot; priority (SKIPPED)</div><br/>
+<div "result">Set description as &quot;Automate test cases using Cucumber and Selenium&quot; (SKIPPED)</div><br/>
+<div "result">Save the task (SKIPPED)</div><br/>
+<div "result">Task details page should be displayed (SKIPPED)</div><br/>
+<div "result">Data should match with created task data (SKIPPED)</div><br/>
+<div "result">I logout from application (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;!-- Note: It is strongly recommended that you do NOT make large changes to this file. Changing DOM structure or classes may prevent
+         the page from functioning correctly. Especially important pieces have been marked as such with comments
+         and should not be changed for any reason. --&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;referrer&quot; content=&quot;never&quot; /&gt;
+    &lt;title localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/title&gt;
+
+
+
+
+    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        WARNING: DO NOT REMOVE!
+        THIS SECTION LOADS ALL PAGE FUNCTIONALITY
+        REMOVING THIS WILL PREVENT BLOCK PAGES FROM FUNCTIONING CORRECTLY
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            // evaluate these on the proxy and make them available as js vars...
+var hashedpw = &quot;&quot;;
+var jumpto = &quot; &quot;;
+
+var coach_continue_url = &quot; &quot;;
+var application_name = &quot;none&quot;;
+var application_action_name = &quot;-&quot;;
+var response_categories = &quot;Uncategorized&quot;;
+var url_host = &quot;52.70.143.199&quot;;
+var url_address = &quot;52.70.143.199&quot;;
+var url_port = &quot;4444&quot;;
+var client_address = &quot;97.11.38.151&quot;;
+var category_review_url = &quot;http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&amp;url=http://52.70.143.199:4444/wd/hub/session&quot;;
+var last_error = &quot;&quot;;
+var x_cs_auth_form_action_url = &quot;http://www.cfauth.com/?bcfru=aHR0cDovLzUyLjcwLjE0My4xOTk6NDQ0NC93ZC9odWIvc2Vzc2lvbg==&quot;;
+var x_auth_challenge_string = &quot;&quot;;
+var x_cs_auth_form_domain_field = &quot;&quot;;
+var cs_username = &quot;Unauthenticated User&quot;;
+var x_cs_auth_request_id = &quot;&quot;;
+var x_auth_private_challenge_state = &quot;&quot;;
+var sc_auth_status = &quot;&quot;;
+var reason = &quot;Request could not be handled&quot;;
+var method = &quot;POST&quot;;
+var x_radius_splash_username = &quot;&quot;;
+var x_radius_splash_session_id = &quot;0&quot;;
+var x_rs_ocsp_error = &quot;&quot;;
+var x_virus_id = &quot;&quot;;
+var x_virus_details = &quot;&quot;;
+var empty = &quot;&quot;;
+var ssl_failure_reason = &quot;&quot;;
+var server_connection_socket_errno = &quot;Operation timed out&quot;;
+var icap_error_details = &quot;&quot;;
+var redirect_location = &quot;&quot;;
+var exception_rationale = &quot;&quot;;
+var exception_request_rationale = &quot;&quot;;
+
+window.onload = function() {
+    var externalLinks = function() {
+        if (!document.getElementsByTagName) return;
+        var anchors = document.getElementsByTagName(&quot;a&quot;);
+        for (var i=0; i&lt;anchors.length; i++) {
+            var anchor = anchors[i];
+            var rel = anchor.getAttribute(&quot;rel&quot;) || &apos;&apos;;
+            if (anchor.getAttribute(&quot;href&quot;) &amp;&amp; rel === &quot;external&quot;) {
+                anchor.target = &quot;_blank&quot;;
+            }
+            anchor.setAttribute(&quot;rel&quot;, rel + &quot; noreferrer&quot;);
+        }
+    };
+    externalLinks();
+
+    if (errors.length != 0 ) {
+        var localize = function() {
+            var find = $(&quot;[localize]&quot;);
+
+            $(find).each(function(){
+                var transTxtKey;
+                var key=$(this).attr(&apos;localize&apos;).replace(&quot;[&quot;,&quot;&quot;).replace(&quot;]&quot;,&quot;&quot;);
+                var keys=key.split(/\./);
+
+                if (keys.length &lt; 1) {
+                    return false;
+                }
+
+                var textObject = errors;
+                while(keys.length &gt; 0 &amp;&amp; textObject) {
+                    textObject = textObject[keys.shift()];
+                }
+                transTxtKey = textObject;
+
+                if(transTxtKey) {
+                    $(this).html(transTxtKey);
+                }
+            });
+
+        };
+        localize();
+    }
+
+// once localized, replace the non-runtime evaluated variables with live content.
+    var fixprxevals = function() {
+// todo: drive this from an array or tidy it up.
+        $(&quot;a#coach-continue-url&quot;).attr(&quot;href&quot;, coach_continue_url);
+        $(&quot;#application-name&quot;).text(&apos;\&quot;&apos; + application_name + &apos;\&quot;&apos;);
+        $(&quot;#application-action-name&quot;).text(&apos;\&quot;&apos; + application_action_name + &apos;\&quot;&apos;);
+        $(&quot;#response-categories&quot;).text(&apos;\&quot;&apos; + response_categories + &apos;\&quot;&apos;);
+        $(&quot;#url-host&quot;).text(&apos;\&quot;&apos; + url_host + &apos;\&quot;&apos;);
+        $(&quot;#url-address&quot;).text(&apos;\&quot;&apos; + url_address + &apos;\&quot;&apos;);
+        $(&quot;#url-port&quot;).text(&apos;\&quot;&apos; + url_port + &apos;\&quot;&apos;);
+        $(&quot;#client_address&quot;).text(&apos;\&quot;&apos; + client_address + &apos;\&quot;&apos;);
+        $(&quot;#category-review-url&quot;).html(&apos;&lt;a href=&quot;&apos; + category_review_url + &apos;&quot;&gt;http://sitereview.bluecoat.com&lt;/a&gt;&apos;);
+        $(&quot;#last-error&quot;).text(&apos;\&quot;&apos; + last_error + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-action-url&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_action_url + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-challenge-string&quot;).text(&apos;\&quot;&apos; + x_auth_challenge_string + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-domain-field&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_domain_field + &apos;\&quot;&apos;);
+        $(&quot;#cs-username&quot;).text(&apos;\&quot;&apos; + cs_username + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-request-id&quot;).text(&apos;\&quot;&apos; + x_cs_auth_request_id + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-private-challenge-state&quot;).text(&apos;\&quot;&apos; + x_auth_private_challenge_state + &apos;\&quot;&apos;);
+        $(&quot;#sc-auth-status&quot;).text(&apos;\&quot;&apos; + sc_auth_status + &apos;\&quot;&apos;);
+        $(&quot;#reason&quot;).text(&apos;\&quot;&apos; + reason + &apos;\&quot;&apos;);
+        $(&quot;#method&quot;).text(&apos;\&quot;&apos; + method + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-username&quot;).text(&apos;\&quot;&apos; + x_radius_splash_username + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-session-id&quot;).text(&apos;\&quot;&apos; + x_radius_splash_session_id + &apos;\&quot;&apos;);
+        $(&quot;#x-rs-ocsp-error&quot;).text(&apos;\&quot;&apos; + x_rs_ocsp_error + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-id&quot;).text(&apos;\&quot;&apos; + x_virus_id + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-details&quot;).text(&apos;\&quot;&apos; + x_virus_details + &apos;\&quot;&apos;);
+//    $(&quot;#proxy-sg-private-challenge-state&quot;).attr(&quot;value&quot;, proxy-sg-private-challenge-state);
+//    $(&quot;#proxy-sg-request-id&quot;).attr(&quot;value&quot;, proxy_sg_request_id);
+        $(&quot;#cpUsername&quot;).attr(&quot;value&quot;, cs_username);
+        $(&quot;#ssl-failure-reason&quot;).text(&apos;\&quot;&apos; + ssl_failure_reason + &apos;\&quot;&apos;);
+        $(&quot;#server-connection-socket-errno&quot;).text(&apos;\&quot;&apos; + server_connection_socket_errno + &apos;\&quot;&apos;);
+        $(&quot;#icap-error-details&quot;).text(&apos;\&quot;&apos; + icap_error_details + &apos;\&quot;&apos;);
+        $(&quot;a#redirect-location&quot;).attr(&quot;href&quot;, redirect_location);
+        $(&quot;a#site-review&quot;).attr(&quot;href&quot;, &quot;http://sitereview.bluecoat.com/index.jsp?referrer=bccloud&amp;url=&quot; + url_host);
+        $(&quot;#bcExceptionRationale&quot;).text(exception_request_rationale || exception_rationale || &quot;N/A&quot;);
+    };
+    fixprxevals();
+
+    $(&quot;#pwinput&quot;).keypress(function(e) {
+        if(e.keyCode==13) { return false; }
+    });
+
+    $(&quot;#pwinput&quot;).focus();
+    $(&quot;#sesame&quot;).click(function() {
+        var supplied = $(&quot;#pwinput&quot;).attr(&quot;value&quot;);
+        var hashed = $.md5(supplied).toUpperCase();
+        if(supplied) {
+            valpw(hashed); return false;
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors[&quot;validations&quot;].password_override.notSupplied;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.notSupplied]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    });
+
+    var detailsShowing = false;
+    $(&apos;.detFlip&apos;).click(function() {
+        if(!detailsShowing){
+            $(&quot;#detMore&quot;).hide();
+            $(&quot;#detLess&quot;).show();
+            $(&quot;#additionalInfo&quot;).show(&apos;fast&apos;);
+        } else {
+            $(&quot;#detMore&quot;).show();
+            $(&quot;#detLess&quot;).hide();
+            $(&quot;#additionalInfo&quot;).hide(&apos;fast&apos;);
+        }
+        detailsShowing = !detailsShowing;
+    });
+    $(&quot;#pwinput&quot;).click(function() {
+        $(&quot;#errorNotify&quot;).hide(&quot;fast&quot;);
+        $(&quot;#pwinput&quot;).removeClass(&quot;error&quot;);
+        this.value = &quot;&quot;;
+    });
+
+    var goTo = function(url) {
+        var a = document.createElement(&quot;a&quot;);
+        if(!a.click) {
+            window.location=url;
+            return;
+        }
+        a.setAttribute(&quot;href&quot;, url);
+        a.style.display = &quot;block&quot;;
+        $(&quot;body&quot;).append(a);
+        a.click();
+    };
+
+    function valpw(hashed) {
+        if(hashed==hashedpw) {
+            goTo(jumpto);
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors.validations.password_override.incorrectPassword;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.incorrectPassword]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    }
+
+    if($(&apos;#contactNameValue&apos;).text() === &apos;&apos;) $(&apos;#contactName&apos;).hide();
+    if($(&apos;#contactPhoneValue&apos;).text() === &apos;&apos;) $(&apos;#contactPhone&apos;).hide();
+    if($(&apos;#contactEmailValue&apos;).text() === &apos;&apos;) $(&apos;#contactEmail&apos;).hide();
+
+    if (String.prototype.trim &amp;&amp; [&quot;unlicensed&quot;, &quot;unavailable&quot;, &quot;none&quot;, &quot;invalid&quot;].indexOf($(&quot;#addClientGeolocation .additional&quot;).text().trim().toLowerCase()) !== -1) {
+        $(&quot;#addClientGeolocation&quot;).hide();
+    }
+};
+
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery-1.5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//notify.bluecoat.com/ex/5.0/js/lang/exceptions.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery.md5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+
+        &lt;/script&gt;
+    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+    &lt;!-- This loads default Symantec styling --&gt;
+   	&lt;style type=&quot;text/css&quot;&gt;
+       #logo a {
+    background-image: url(&quot;//portal.threatpulse.com/ex/5.0/img/logos/symantec-logo.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+    &lt;/style&gt;
+    &lt;!-- This will load the default Symantec error page styling, as configured in the Symantec portal --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//portal.threatpulse.com/ex/5.0/css/style0204.css&quot; /&gt;
+    &lt;!-- This will load the Symantec favicon --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;//portal.threatpulse.com/ex/5.0/img/favicon.ico&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;bodydrop&quot;&gt;
+&lt;div id=&quot;outer&quot;&gt;
+    &lt;div id=&quot;container&quot; class=&quot;int curved&quot;&gt;
+        &lt;div id=&quot;branding&quot;&gt;
+            &lt;div class=&quot;curved&quot; id=&quot;logo&quot;&gt;
+                &lt;a rel=&quot;external&quot; title=&quot;Symantec&quot; href=&quot;http://www.symantec.com/&quot;&gt;Symantec&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;content&quot;&gt;
+            &lt;div id=&quot;bodyCopy&quot;&gt;
+                &lt;div id=&quot;exceptionDetails&quot; class=&quot;int&quot;&gt;
+                    &lt;h1 id=&quot;doctitle&quot; localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/h1&gt;
+
+
+
+
+                    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         WARNING: DO NOT REMOVE!
+                         THIS SECTION IS USED TO INJECT KEY PAGE FUNCTIONALITY INCLUDING:
+                           - EXCEPTION DETAILS (DESCRIPTION)
+                           - INPUT TEXT FIELD FOR PASSWORD OVERRIDE
+                           - MESSAGE AND PROCEED BUTTON FOR COACHING
+                         REMOVING THIS WILL PREVENT BLOCK PAGES FROM WORKING
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+                    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+                        &lt;div id=&quot;message&quot;&gt;
+                            &lt;div localize=&quot;[tcp_error.message]&quot;&gt;
+                                Your request could not be completed. &lt;p&gt;The URL you requested at 52.70.143.199, could not be reached by the network. The site&apos;s server may be down or experiencing a high level of traffic.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+                    &lt;div id=&quot;help&quot;&gt;
+                        &lt;div localize=&quot;[tcp_error.help]&quot;&gt;
+                            The Web Server may be down, too busy, or experiencing other problems preventing it from responding to requests. You may wish to try again at a later time.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;p id=&quot;httpCode&quot;&gt;&lt;span localize=&quot;[techSupport]&quot;&gt;Tech support information&lt;/span&gt;: tcp_error
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detMore&quot; localize=&quot;[more]&quot;&gt;more&lt;/span&gt;&lt;/a&gt;
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detLess&quot; localize=&quot;[less]&quot;&gt;less&lt;/span&gt;&lt;/a&gt;
+                    &lt;/p&gt;
+
+                    &lt;p&gt;
+                        &lt;span localize=&quot;[contact]&quot;&gt;For assistance, contact your network support team.&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactName&quot;&gt;
+                        &lt;span localize=&quot;[name]&quot;&gt;Name&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactNameValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactPhone&quot;&gt;
+                        &lt;span localize=&quot;[phone]&quot;&gt;Phone&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactPhoneValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactEmail&quot;&gt;
+                        &lt;span localize=&quot;[email]&quot;&gt;Email&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactEmailValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;additionalInfo&quot; class=&quot;int curved&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li id=&quot;addIP&quot;&gt;&lt;span localize=&quot;[clientIP]&quot;&gt;Client IP:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;97.11.38.151
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserName&quot;&gt;&lt;span localize=&quot;[username]&quot;&gt;Username:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;Unauthenticated User
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addURL&quot;&gt;&lt;span localize=&quot;[URL]&quot;&gt;URL:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;http://52.70.143.199:4444/wd/hub/session
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserAgent&quot;&gt;&lt;span localize=&quot;[userAgent]&quot;&gt;User Agent:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;okhttp/3.9.1
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addGeolocation&quot;&gt;&lt;span&gt;Client Geolocation:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;Unavailable
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addErrorId&quot;&gt;&lt;span&gt;Error ID:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;&lt;span id=&apos;bcExceptionRationale&apos;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;footer&quot;&gt;
+            &lt;div id=&quot;copyright&quot;&gt;&amp;#169; 2018 Symantec&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;IBM651-PC0BY5PB&apos;, ip: &apos;97.11.38.151&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:145)
+	at com.app.utilities.Driver.getDriver(Driver.java:31)
+	at com.app.step_definitions.Hooks.setUp(Hooks.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:84)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace252738640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace252738640'><pre>org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;!-- Note: It is strongly recommended that you do NOT make large changes to this file. Changing DOM structure or classes may prevent
+         the page from functioning correctly. Especially important pieces have been marked as such with comments
+         and should not be changed for any reason. --&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;referrer&quot; content=&quot;never&quot; /&gt;
+    &lt;title localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/title&gt;
+
+
+
+
+    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        WARNING: DO NOT REMOVE!
+        THIS SECTION LOADS ALL PAGE FUNCTIONALITY
+        REMOVING THIS WILL PREVENT BLOCK PAGES FROM FUNCTIONING CORRECTLY
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            // evaluate these on the proxy and make them available as js vars...
+var hashedpw = &quot;&quot;;
+var jumpto = &quot; &quot;;
+
+var coach_continue_url = &quot; &quot;;
+var application_name = &quot;none&quot;;
+var application_action_name = &quot;-&quot;;
+var response_categories = &quot;Uncategorized&quot;;
+var url_host = &quot;52.70.143.199&quot;;
+var url_address = &quot;52.70.143.199&quot;;
+var url_port = &quot;4444&quot;;
+var client_address = &quot;97.11.38.151&quot;;
+var category_review_url = &quot;http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&amp;url=http://52.70.143.199:4444/wd/hub/session&quot;;
+var last_error = &quot;&quot;;
+var x_cs_auth_form_action_url = &quot;http://www.cfauth.com/?bcfru=aHR0cDovLzUyLjcwLjE0My4xOTk6NDQ0NC93ZC9odWIvc2Vzc2lvbg==&quot;;
+var x_auth_challenge_string = &quot;&quot;;
+var x_cs_auth_form_domain_field = &quot;&quot;;
+var cs_username = &quot;Unauthenticated User&quot;;
+var x_cs_auth_request_id = &quot;&quot;;
+var x_auth_private_challenge_state = &quot;&quot;;
+var sc_auth_status = &quot;&quot;;
+var reason = &quot;Request could not be handled&quot;;
+var method = &quot;POST&quot;;
+var x_radius_splash_username = &quot;&quot;;
+var x_radius_splash_session_id = &quot;0&quot;;
+var x_rs_ocsp_error = &quot;&quot;;
+var x_virus_id = &quot;&quot;;
+var x_virus_details = &quot;&quot;;
+var empty = &quot;&quot;;
+var ssl_failure_reason = &quot;&quot;;
+var server_connection_socket_errno = &quot;Operation timed out&quot;;
+var icap_error_details = &quot;&quot;;
+var redirect_location = &quot;&quot;;
+var exception_rationale = &quot;&quot;;
+var exception_request_rationale = &quot;&quot;;
+
+window.onload = function() {
+    var externalLinks = function() {
+        if (!document.getElementsByTagName) return;
+        var anchors = document.getElementsByTagName(&quot;a&quot;);
+        for (var i=0; i&lt;anchors.length; i++) {
+            var anchor = anchors[i];
+            var rel = anchor.getAttribute(&quot;rel&quot;) || &apos;&apos;;
+            if (anchor.getAttribute(&quot;href&quot;) &amp;&amp; rel === &quot;external&quot;) {
+                anchor.target = &quot;_blank&quot;;
+            }
+            anchor.setAttribute(&quot;rel&quot;, rel + &quot; noreferrer&quot;);
+        }
+    };
+    externalLinks();
+
+    if (errors.length != 0 ) {
+        var localize = function() {
+            var find = $(&quot;[localize]&quot;);
+
+            $(find).each(function(){
+                var transTxtKey;
+                var key=$(this).attr(&apos;localize&apos;).replace(&quot;[&quot;,&quot;&quot;).replace(&quot;]&quot;,&quot;&quot;);
+                var keys=key.split(/\./);
+
+                if (keys.length &lt; 1) {
+                    return false;
+                }
+
+                var textObject = errors;
+                while(keys.length &gt; 0 &amp;&amp; textObject) {
+                    textObject = textObject[keys.shift()];
+                }
+                transTxtKey = textObject;
+
+                if(transTxtKey) {
+                    $(this).html(transTxtKey);
+                }
+            });
+
+        };
+        localize();
+    }
+
+// once localized, replace the non-runtime evaluated variables with live content.
+    var fixprxevals = function() {
+// todo: drive this from an array or tidy it up.
+        $(&quot;a#coach-continue-url&quot;).attr(&quot;href&quot;, coach_continue_url);
+        $(&quot;#application-name&quot;).text(&apos;\&quot;&apos; + application_name + &apos;\&quot;&apos;);
+        $(&quot;#application-action-name&quot;).text(&apos;\&quot;&apos; + application_action_name + &apos;\&quot;&apos;);
+        $(&quot;#response-categories&quot;).text(&apos;\&quot;&apos; + response_categories + &apos;\&quot;&apos;);
+        $(&quot;#url-host&quot;).text(&apos;\&quot;&apos; + url_host + &apos;\&quot;&apos;);
+        $(&quot;#url-address&quot;).text(&apos;\&quot;&apos; + url_address + &apos;\&quot;&apos;);
+        $(&quot;#url-port&quot;).text(&apos;\&quot;&apos; + url_port + &apos;\&quot;&apos;);
+        $(&quot;#client_address&quot;).text(&apos;\&quot;&apos; + client_address + &apos;\&quot;&apos;);
+        $(&quot;#category-review-url&quot;).html(&apos;&lt;a href=&quot;&apos; + category_review_url + &apos;&quot;&gt;http://sitereview.bluecoat.com&lt;/a&gt;&apos;);
+        $(&quot;#last-error&quot;).text(&apos;\&quot;&apos; + last_error + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-action-url&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_action_url + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-challenge-string&quot;).text(&apos;\&quot;&apos; + x_auth_challenge_string + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-domain-field&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_domain_field + &apos;\&quot;&apos;);
+        $(&quot;#cs-username&quot;).text(&apos;\&quot;&apos; + cs_username + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-request-id&quot;).text(&apos;\&quot;&apos; + x_cs_auth_request_id + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-private-challenge-state&quot;).text(&apos;\&quot;&apos; + x_auth_private_challenge_state + &apos;\&quot;&apos;);
+        $(&quot;#sc-auth-status&quot;).text(&apos;\&quot;&apos; + sc_auth_status + &apos;\&quot;&apos;);
+        $(&quot;#reason&quot;).text(&apos;\&quot;&apos; + reason + &apos;\&quot;&apos;);
+        $(&quot;#method&quot;).text(&apos;\&quot;&apos; + method + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-username&quot;).text(&apos;\&quot;&apos; + x_radius_splash_username + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-session-id&quot;).text(&apos;\&quot;&apos; + x_radius_splash_session_id + &apos;\&quot;&apos;);
+        $(&quot;#x-rs-ocsp-error&quot;).text(&apos;\&quot;&apos; + x_rs_ocsp_error + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-id&quot;).text(&apos;\&quot;&apos; + x_virus_id + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-details&quot;).text(&apos;\&quot;&apos; + x_virus_details + &apos;\&quot;&apos;);
+//    $(&quot;#proxy-sg-private-challenge-state&quot;).attr(&quot;value&quot;, proxy-sg-private-challenge-state);
+//    $(&quot;#proxy-sg-request-id&quot;).attr(&quot;value&quot;, proxy_sg_request_id);
+        $(&quot;#cpUsername&quot;).attr(&quot;value&quot;, cs_username);
+        $(&quot;#ssl-failure-reason&quot;).text(&apos;\&quot;&apos; + ssl_failure_reason + &apos;\&quot;&apos;);
+        $(&quot;#server-connection-socket-errno&quot;).text(&apos;\&quot;&apos; + server_connection_socket_errno + &apos;\&quot;&apos;);
+        $(&quot;#icap-error-details&quot;).text(&apos;\&quot;&apos; + icap_error_details + &apos;\&quot;&apos;);
+        $(&quot;a#redirect-location&quot;).attr(&quot;href&quot;, redirect_location);
+        $(&quot;a#site-review&quot;).attr(&quot;href&quot;, &quot;http://sitereview.bluecoat.com/index.jsp?referrer=bccloud&amp;url=&quot; + url_host);
+        $(&quot;#bcExceptionRationale&quot;).text(exception_request_rationale || exception_rationale || &quot;N/A&quot;);
+    };
+    fixprxevals();
+
+    $(&quot;#pwinput&quot;).keypress(function(e) {
+        if(e.keyCode==13) { return false; }
+    });
+
+    $(&quot;#pwinput&quot;).focus();
+    $(&quot;#sesame&quot;).click(function() {
+        var supplied = $(&quot;#pwinput&quot;).attr(&quot;value&quot;);
+        var hashed = $.md5(supplied).toUpperCase();
+        if(supplied) {
+            valpw(hashed); return false;
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors[&quot;validations&quot;].password_override.notSupplied;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.notSupplied]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    });
+
+    var detailsShowing = false;
+    $(&apos;.detFlip&apos;).click(function() {
+        if(!detailsShowing){
+            $(&quot;#detMore&quot;).hide();
+            $(&quot;#detLess&quot;).show();
+            $(&quot;#additionalInfo&quot;).show(&apos;fast&apos;);
+        } else {
+            $(&quot;#detMore&quot;).show();
+            $(&quot;#detLess&quot;).hide();
+            $(&quot;#additionalInfo&quot;).hide(&apos;fast&apos;);
+        }
+        detailsShowing = !detailsShowing;
+    });
+    $(&quot;#pwinput&quot;).click(function() {
+        $(&quot;#errorNotify&quot;).hide(&quot;fast&quot;);
+        $(&quot;#pwinput&quot;).removeClass(&quot;error&quot;);
+        this.value = &quot;&quot;;
+    });
+
+    var goTo = function(url) {
+        var a = document.createElement(&quot;a&quot;);
+        if(!a.click) {
+            window.location=url;
+            return;
+        }
+        a.setAttribute(&quot;href&quot;, url);
+        a.style.display = &quot;block&quot;;
+        $(&quot;body&quot;).append(a);
+        a.click();
+    };
+
+    function valpw(hashed) {
+        if(hashed==hashedpw) {
+            goTo(jumpto);
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors.validations.password_override.incorrectPassword;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.incorrectPassword]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    }
+
+    if($(&apos;#contactNameValue&apos;).text() === &apos;&apos;) $(&apos;#contactName&apos;).hide();
+    if($(&apos;#contactPhoneValue&apos;).text() === &apos;&apos;) $(&apos;#contactPhone&apos;).hide();
+    if($(&apos;#contactEmailValue&apos;).text() === &apos;&apos;) $(&apos;#contactEmail&apos;).hide();
+
+    if (String.prototype.trim &amp;&amp; [&quot;unlicensed&quot;, &quot;unavailable&quot;, &quot;none&quot;, &quot;invalid&quot;].indexOf($(&quot;#addClientGeolocation .additional&quot;).text().trim().toLowerCase()) !== -1) {
+        $(&quot;#addClientGeolocation&quot;).hide();
+    }
+};
+
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery-1.5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//notify.bluecoat.com/ex/5.0/js/lang/exceptions.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery.md5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+
+        &lt;/script&gt;
+    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+    &lt;!-- This loads default Symantec styling --&gt;
+   	&lt;style type=&quot;text/css&quot;&gt;
+       #logo a {
+    background-image: url(&quot;//portal.threatpulse.com/ex/5.0/img/logos/symantec-logo.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+    &lt;/style&gt;
+    &lt;!-- This will load the default Symantec error page styling, as configured in the Symantec portal --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//portal.threatpulse.com/ex/5.0/css/style0204.css&quot; /&gt;
+    &lt;!-- This will load the Symantec favicon --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;//portal.threatpulse.com/ex/5.0/img/favicon.ico&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;bodydrop&quot;&gt;
+&lt;div id=&quot;outer&quot;&gt;
+    &lt;div id=&quot;container&quot; class=&quot;int curved&quot;&gt;
+        &lt;div id=&quot;branding&quot;&gt;
+            &lt;div class=&quot;curved&quot; id=&quot;logo&quot;&gt;
+                &lt;a rel=&quot;external&quot; title=&quot;Symantec&quot; href=&quot;http://www.symantec.com/&quot;&gt;Symantec&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;content&quot;&gt;
+            &lt;div id=&quot;bodyCopy&quot;&gt;
+                &lt;div id=&quot;exceptionDetails&quot; class=&quot;int&quot;&gt;
+                    &lt;h1 id=&quot;doctitle&quot; localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/h1&gt;
+
+
+
+
+                    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         WARNING: DO NOT REMOVE!
+                         THIS SECTION IS USED TO INJECT KEY PAGE FUNCTIONALITY INCLUDING:
+                           - EXCEPTION DETAILS (DESCRIPTION)
+                           - INPUT TEXT FIELD FOR PASSWORD OVERRIDE
+                           - MESSAGE AND PROCEED BUTTON FOR COACHING
+                         REMOVING THIS WILL PREVENT BLOCK PAGES FROM WORKING
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+                    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+                        &lt;div id=&quot;message&quot;&gt;
+                            &lt;div localize=&quot;[tcp_error.message]&quot;&gt;
+                                Your request could not be completed. &lt;p&gt;The URL you requested at 52.70.143.199, could not be reached by the network. The site&apos;s server may be down or experiencing a high level of traffic.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+                    &lt;div id=&quot;help&quot;&gt;
+                        &lt;div localize=&quot;[tcp_error.help]&quot;&gt;
+                            The Web Server may be down, too busy, or experiencing other problems preventing it from responding to requests. You may wish to try again at a later time.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;p id=&quot;httpCode&quot;&gt;&lt;span localize=&quot;[techSupport]&quot;&gt;Tech support information&lt;/span&gt;: tcp_error
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detMore&quot; localize=&quot;[more]&quot;&gt;more&lt;/span&gt;&lt;/a&gt;
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detLess&quot; localize=&quot;[less]&quot;&gt;less&lt;/span&gt;&lt;/a&gt;
+                    &lt;/p&gt;
+
+                    &lt;p&gt;
+                        &lt;span localize=&quot;[contact]&quot;&gt;For assistance, contact your network support team.&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactName&quot;&gt;
+                        &lt;span localize=&quot;[name]&quot;&gt;Name&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactNameValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactPhone&quot;&gt;
+                        &lt;span localize=&quot;[phone]&quot;&gt;Phone&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactPhoneValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactEmail&quot;&gt;
+                        &lt;span localize=&quot;[email]&quot;&gt;Email&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactEmailValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;additionalInfo&quot; class=&quot;int curved&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li id=&quot;addIP&quot;&gt;&lt;span localize=&quot;[clientIP]&quot;&gt;Client IP:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;97.11.38.151
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserName&quot;&gt;&lt;span localize=&quot;[username]&quot;&gt;Username:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;Unauthenticated User
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addURL&quot;&gt;&lt;span localize=&quot;[URL]&quot;&gt;URL:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;http://52.70.143.199:4444/wd/hub/session
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserAgent&quot;&gt;&lt;span localize=&quot;[userAgent]&quot;&gt;User Agent:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;okhttp/3.9.1
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addGeolocation&quot;&gt;&lt;span&gt;Client Geolocation:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;Unavailable
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addErrorId&quot;&gt;&lt;span&gt;Error ID:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;&lt;span id=&apos;bcExceptionRationale&apos;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;footer&quot;&gt;
+            &lt;div id=&quot;copyright&quot;&gt;&amp;#169; 2018 Symantec&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;IBM651-PC0BY5PB&apos;, ip: &apos;97.11.38.151&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:145)
+	at com.app.utilities.Driver.getDriver(Driver.java:31)
+	at com.app.step_definitions.Hooks.setUp(Hooks.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:84)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>302</td>
+<td>com.app.runners.SmokeTestRunner@71423665</td></tr>
+<tr>
+<td title='com.app.runners.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.app.runners.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Post a note on Dashboard", "Note on Dashboard"<br/>
+<a href="#Output-1112737073" onClick='toggleBox("Output-1112737073", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1112737073" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1112737073">
+<div "result">I logged into suiteCRM (SKIPPED)</div><br/>
+<div "result">I post &quot;Hello Everyone&quot; (SKIPPED)</div><br/>
+<div "result">Post should be displayed (SKIPPED)</div><br/>
+<div "result">I logout from application (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;!-- Note: It is strongly recommended that you do NOT make large changes to this file. Changing DOM structure or classes may prevent
+         the page from functioning correctly. Especially important pieces have been marked as such with comments
+         and should not be changed for any reason. --&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;referrer&quot; content=&quot;never&quot; /&gt;
+    &lt;title localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/title&gt;
+
+
+
+
+    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        WARNING: DO NOT REMOVE!
+        THIS SECTION LOADS ALL PAGE FUNCTIONALITY
+        REMOVING THIS WILL PREVENT BLOCK PAGES FROM FUNCTIONING CORRECTLY
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            // evaluate these on the proxy and make them available as js vars...
+var hashedpw = &quot;&quot;;
+var jumpto = &quot; &quot;;
+
+var coach_continue_url = &quot; &quot;;
+var application_name = &quot;none&quot;;
+var application_action_name = &quot;-&quot;;
+var response_categories = &quot;Uncategorized&quot;;
+var url_host = &quot;52.70.143.199&quot;;
+var url_address = &quot;52.70.143.199&quot;;
+var url_port = &quot;4444&quot;;
+var client_address = &quot;97.11.38.151&quot;;
+var category_review_url = &quot;http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&amp;url=http://52.70.143.199:4444/wd/hub/session&quot;;
+var last_error = &quot;&quot;;
+var x_cs_auth_form_action_url = &quot;http://www.cfauth.com/?bcfru=aHR0cDovLzUyLjcwLjE0My4xOTk6NDQ0NC93ZC9odWIvc2Vzc2lvbg==&quot;;
+var x_auth_challenge_string = &quot;&quot;;
+var x_cs_auth_form_domain_field = &quot;&quot;;
+var cs_username = &quot;Unauthenticated User&quot;;
+var x_cs_auth_request_id = &quot;&quot;;
+var x_auth_private_challenge_state = &quot;&quot;;
+var sc_auth_status = &quot;&quot;;
+var reason = &quot;Request could not be handled&quot;;
+var method = &quot;POST&quot;;
+var x_radius_splash_username = &quot;&quot;;
+var x_radius_splash_session_id = &quot;0&quot;;
+var x_rs_ocsp_error = &quot;&quot;;
+var x_virus_id = &quot;&quot;;
+var x_virus_details = &quot;&quot;;
+var empty = &quot;&quot;;
+var ssl_failure_reason = &quot;&quot;;
+var server_connection_socket_errno = &quot;Operation timed out&quot;;
+var icap_error_details = &quot;&quot;;
+var redirect_location = &quot;&quot;;
+var exception_rationale = &quot;&quot;;
+var exception_request_rationale = &quot;&quot;;
+
+window.onload = function() {
+    var externalLinks = function() {
+        if (!document.getElementsByTagName) return;
+        var anchors = document.getElementsByTagName(&quot;a&quot;);
+        for (var i=0; i&lt;anchors.length; i++) {
+            var anchor = anchors[i];
+            var rel = anchor.getAttribute(&quot;rel&quot;) || &apos;&apos;;
+            if (anchor.getAttribute(&quot;href&quot;) &amp;&amp; rel === &quot;external&quot;) {
+                anchor.target = &quot;_blank&quot;;
+            }
+            anchor.setAttribute(&quot;rel&quot;, rel + &quot; noreferrer&quot;);
+        }
+    };
+    externalLinks();
+
+    if (errors.length != 0 ) {
+        var localize = function() {
+            var find = $(&quot;[localize]&quot;);
+
+            $(find).each(function(){
+                var transTxtKey;
+                var key=$(this).attr(&apos;localize&apos;).replace(&quot;[&quot;,&quot;&quot;).replace(&quot;]&quot;,&quot;&quot;);
+                var keys=key.split(/\./);
+
+                if (keys.length &lt; 1) {
+                    return false;
+                }
+
+                var textObject = errors;
+                while(keys.length &gt; 0 &amp;&amp; textObject) {
+                    textObject = textObject[keys.shift()];
+                }
+                transTxtKey = textObject;
+
+                if(transTxtKey) {
+                    $(this).html(transTxtKey);
+                }
+            });
+
+        };
+        localize();
+    }
+
+// once localized, replace the non-runtime evaluated variables with live content.
+    var fixprxevals = function() {
+// todo: drive this from an array or tidy it up.
+        $(&quot;a#coach-continue-url&quot;).attr(&quot;href&quot;, coach_continue_url);
+        $(&quot;#application-name&quot;).text(&apos;\&quot;&apos; + application_name + &apos;\&quot;&apos;);
+        $(&quot;#application-action-name&quot;).text(&apos;\&quot;&apos; + application_action_name + &apos;\&quot;&apos;);
+        $(&quot;#response-categories&quot;).text(&apos;\&quot;&apos; + response_categories + &apos;\&quot;&apos;);
+        $(&quot;#url-host&quot;).text(&apos;\&quot;&apos; + url_host + &apos;\&quot;&apos;);
+        $(&quot;#url-address&quot;).text(&apos;\&quot;&apos; + url_address + &apos;\&quot;&apos;);
+        $(&quot;#url-port&quot;).text(&apos;\&quot;&apos; + url_port + &apos;\&quot;&apos;);
+        $(&quot;#client_address&quot;).text(&apos;\&quot;&apos; + client_address + &apos;\&quot;&apos;);
+        $(&quot;#category-review-url&quot;).html(&apos;&lt;a href=&quot;&apos; + category_review_url + &apos;&quot;&gt;http://sitereview.bluecoat.com&lt;/a&gt;&apos;);
+        $(&quot;#last-error&quot;).text(&apos;\&quot;&apos; + last_error + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-action-url&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_action_url + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-challenge-string&quot;).text(&apos;\&quot;&apos; + x_auth_challenge_string + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-domain-field&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_domain_field + &apos;\&quot;&apos;);
+        $(&quot;#cs-username&quot;).text(&apos;\&quot;&apos; + cs_username + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-request-id&quot;).text(&apos;\&quot;&apos; + x_cs_auth_request_id + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-private-challenge-state&quot;).text(&apos;\&quot;&apos; + x_auth_private_challenge_state + &apos;\&quot;&apos;);
+        $(&quot;#sc-auth-status&quot;).text(&apos;\&quot;&apos; + sc_auth_status + &apos;\&quot;&apos;);
+        $(&quot;#reason&quot;).text(&apos;\&quot;&apos; + reason + &apos;\&quot;&apos;);
+        $(&quot;#method&quot;).text(&apos;\&quot;&apos; + method + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-username&quot;).text(&apos;\&quot;&apos; + x_radius_splash_username + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-session-id&quot;).text(&apos;\&quot;&apos; + x_radius_splash_session_id + &apos;\&quot;&apos;);
+        $(&quot;#x-rs-ocsp-error&quot;).text(&apos;\&quot;&apos; + x_rs_ocsp_error + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-id&quot;).text(&apos;\&quot;&apos; + x_virus_id + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-details&quot;).text(&apos;\&quot;&apos; + x_virus_details + &apos;\&quot;&apos;);
+//    $(&quot;#proxy-sg-private-challenge-state&quot;).attr(&quot;value&quot;, proxy-sg-private-challenge-state);
+//    $(&quot;#proxy-sg-request-id&quot;).attr(&quot;value&quot;, proxy_sg_request_id);
+        $(&quot;#cpUsername&quot;).attr(&quot;value&quot;, cs_username);
+        $(&quot;#ssl-failure-reason&quot;).text(&apos;\&quot;&apos; + ssl_failure_reason + &apos;\&quot;&apos;);
+        $(&quot;#server-connection-socket-errno&quot;).text(&apos;\&quot;&apos; + server_connection_socket_errno + &apos;\&quot;&apos;);
+        $(&quot;#icap-error-details&quot;).text(&apos;\&quot;&apos; + icap_error_details + &apos;\&quot;&apos;);
+        $(&quot;a#redirect-location&quot;).attr(&quot;href&quot;, redirect_location);
+        $(&quot;a#site-review&quot;).attr(&quot;href&quot;, &quot;http://sitereview.bluecoat.com/index.jsp?referrer=bccloud&amp;url=&quot; + url_host);
+        $(&quot;#bcExceptionRationale&quot;).text(exception_request_rationale || exception_rationale || &quot;N/A&quot;);
+    };
+    fixprxevals();
+
+    $(&quot;#pwinput&quot;).keypress(function(e) {
+        if(e.keyCode==13) { return false; }
+    });
+
+    $(&quot;#pwinput&quot;).focus();
+    $(&quot;#sesame&quot;).click(function() {
+        var supplied = $(&quot;#pwinput&quot;).attr(&quot;value&quot;);
+        var hashed = $.md5(supplied).toUpperCase();
+        if(supplied) {
+            valpw(hashed); return false;
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors[&quot;validations&quot;].password_override.notSupplied;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.notSupplied]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    });
+
+    var detailsShowing = false;
+    $(&apos;.detFlip&apos;).click(function() {
+        if(!detailsShowing){
+            $(&quot;#detMore&quot;).hide();
+            $(&quot;#detLess&quot;).show();
+            $(&quot;#additionalInfo&quot;).show(&apos;fast&apos;);
+        } else {
+            $(&quot;#detMore&quot;).show();
+            $(&quot;#detLess&quot;).hide();
+            $(&quot;#additionalInfo&quot;).hide(&apos;fast&apos;);
+        }
+        detailsShowing = !detailsShowing;
+    });
+    $(&quot;#pwinput&quot;).click(function() {
+        $(&quot;#errorNotify&quot;).hide(&quot;fast&quot;);
+        $(&quot;#pwinput&quot;).removeClass(&quot;error&quot;);
+        this.value = &quot;&quot;;
+    });
+
+    var goTo = function(url) {
+        var a = document.createElement(&quot;a&quot;);
+        if(!a.click) {
+            window.location=url;
+            return;
+        }
+        a.setAttribute(&quot;href&quot;, url);
+        a.style.display = &quot;block&quot;;
+        $(&quot;body&quot;).append(a);
+        a.click();
+    };
+
+    function valpw(hashed) {
+        if(hashed==hashedpw) {
+            goTo(jumpto);
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors.validations.password_override.incorrectPassword;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.incorrectPassword]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    }
+
+    if($(&apos;#contactNameValue&apos;).text() === &apos;&apos;) $(&apos;#contactName&apos;).hide();
+    if($(&apos;#contactPhoneValue&apos;).text() === &apos;&apos;) $(&apos;#contactPhone&apos;).hide();
+    if($(&apos;#contactEmailValue&apos;).text() === &apos;&apos;) $(&apos;#contactEmail&apos;).hide();
+
+    if (String.prototype.trim &amp;&amp; [&quot;unlicensed&quot;, &quot;unavailable&quot;, &quot;none&quot;, &quot;invalid&quot;].indexOf($(&quot;#addClientGeolocation .additional&quot;).text().trim().toLowerCase()) !== -1) {
+        $(&quot;#addClientGeolocation&quot;).hide();
+    }
+};
+
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery-1.5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//notify.bluecoat.com/ex/5.0/js/lang/exceptions.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery.md5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+
+        &lt;/script&gt;
+    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+    &lt;!-- This loads default Symantec styling --&gt;
+   	&lt;style type=&quot;text/css&quot;&gt;
+       #logo a {
+    background-image: url(&quot;//portal.threatpulse.com/ex/5.0/img/logos/symantec-logo.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+    &lt;/style&gt;
+    &lt;!-- This will load the default Symantec error page styling, as configured in the Symantec portal --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//portal.threatpulse.com/ex/5.0/css/style0204.css&quot; /&gt;
+    &lt;!-- This will load the Symantec favicon --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;//portal.threatpulse.com/ex/5.0/img/favicon.ico&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;bodydrop&quot;&gt;
+&lt;div id=&quot;outer&quot;&gt;
+    &lt;div id=&quot;container&quot; class=&quot;int curved&quot;&gt;
+        &lt;div id=&quot;branding&quot;&gt;
+            &lt;div class=&quot;curved&quot; id=&quot;logo&quot;&gt;
+                &lt;a rel=&quot;external&quot; title=&quot;Symantec&quot; href=&quot;http://www.symantec.com/&quot;&gt;Symantec&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;content&quot;&gt;
+            &lt;div id=&quot;bodyCopy&quot;&gt;
+                &lt;div id=&quot;exceptionDetails&quot; class=&quot;int&quot;&gt;
+                    &lt;h1 id=&quot;doctitle&quot; localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/h1&gt;
+
+
+
+
+                    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         WARNING: DO NOT REMOVE!
+                         THIS SECTION IS USED TO INJECT KEY PAGE FUNCTIONALITY INCLUDING:
+                           - EXCEPTION DETAILS (DESCRIPTION)
+                           - INPUT TEXT FIELD FOR PASSWORD OVERRIDE
+                           - MESSAGE AND PROCEED BUTTON FOR COACHING
+                         REMOVING THIS WILL PREVENT BLOCK PAGES FROM WORKING
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+                    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+                        &lt;div id=&quot;message&quot;&gt;
+                            &lt;div localize=&quot;[tcp_error.message]&quot;&gt;
+                                Your request could not be completed. &lt;p&gt;The URL you requested at 52.70.143.199, could not be reached by the network. The site&apos;s server may be down or experiencing a high level of traffic.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+                    &lt;div id=&quot;help&quot;&gt;
+                        &lt;div localize=&quot;[tcp_error.help]&quot;&gt;
+                            The Web Server may be down, too busy, or experiencing other problems preventing it from responding to requests. You may wish to try again at a later time.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;p id=&quot;httpCode&quot;&gt;&lt;span localize=&quot;[techSupport]&quot;&gt;Tech support information&lt;/span&gt;: tcp_error
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detMore&quot; localize=&quot;[more]&quot;&gt;more&lt;/span&gt;&lt;/a&gt;
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detLess&quot; localize=&quot;[less]&quot;&gt;less&lt;/span&gt;&lt;/a&gt;
+                    &lt;/p&gt;
+
+                    &lt;p&gt;
+                        &lt;span localize=&quot;[contact]&quot;&gt;For assistance, contact your network support team.&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactName&quot;&gt;
+                        &lt;span localize=&quot;[name]&quot;&gt;Name&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactNameValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactPhone&quot;&gt;
+                        &lt;span localize=&quot;[phone]&quot;&gt;Phone&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactPhoneValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactEmail&quot;&gt;
+                        &lt;span localize=&quot;[email]&quot;&gt;Email&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactEmailValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;additionalInfo&quot; class=&quot;int curved&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li id=&quot;addIP&quot;&gt;&lt;span localize=&quot;[clientIP]&quot;&gt;Client IP:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;97.11.38.151
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserName&quot;&gt;&lt;span localize=&quot;[username]&quot;&gt;Username:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;Unauthenticated User
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addURL&quot;&gt;&lt;span localize=&quot;[URL]&quot;&gt;URL:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;http://52.70.143.199:4444/wd/hub/session
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserAgent&quot;&gt;&lt;span localize=&quot;[userAgent]&quot;&gt;User Agent:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;okhttp/3.9.1
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addGeolocation&quot;&gt;&lt;span&gt;Client Geolocation:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;Unavailable
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addErrorId&quot;&gt;&lt;span&gt;Error ID:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;&lt;span id=&apos;bcExceptionRationale&apos;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;footer&quot;&gt;
+            &lt;div id=&quot;copyright&quot;&gt;&amp;#169; 2018 Symantec&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;IBM651-PC0BY5PB&apos;, ip: &apos;97.11.38.151&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:145)
+	at com.app.utilities.Driver.getDriver(Driver.java:31)
+	at com.app.step_definitions.Hooks.setUp(Hooks.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:84)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1112737073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112737073'><pre>org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;!-- Note: It is strongly recommended that you do NOT make large changes to this file. Changing DOM structure or classes may prevent
+         the page from functioning correctly. Especially important pieces have been marked as such with comments
+         and should not be changed for any reason. --&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;referrer&quot; content=&quot;never&quot; /&gt;
+    &lt;title localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/title&gt;
+
+
+
+
+    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        WARNING: DO NOT REMOVE!
+        THIS SECTION LOADS ALL PAGE FUNCTIONALITY
+        REMOVING THIS WILL PREVENT BLOCK PAGES FROM FUNCTIONING CORRECTLY
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            // evaluate these on the proxy and make them available as js vars...
+var hashedpw = &quot;&quot;;
+var jumpto = &quot; &quot;;
+
+var coach_continue_url = &quot; &quot;;
+var application_name = &quot;none&quot;;
+var application_action_name = &quot;-&quot;;
+var response_categories = &quot;Uncategorized&quot;;
+var url_host = &quot;52.70.143.199&quot;;
+var url_address = &quot;52.70.143.199&quot;;
+var url_port = &quot;4444&quot;;
+var client_address = &quot;97.11.38.151&quot;;
+var category_review_url = &quot;http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&amp;url=http://52.70.143.199:4444/wd/hub/session&quot;;
+var last_error = &quot;&quot;;
+var x_cs_auth_form_action_url = &quot;http://www.cfauth.com/?bcfru=aHR0cDovLzUyLjcwLjE0My4xOTk6NDQ0NC93ZC9odWIvc2Vzc2lvbg==&quot;;
+var x_auth_challenge_string = &quot;&quot;;
+var x_cs_auth_form_domain_field = &quot;&quot;;
+var cs_username = &quot;Unauthenticated User&quot;;
+var x_cs_auth_request_id = &quot;&quot;;
+var x_auth_private_challenge_state = &quot;&quot;;
+var sc_auth_status = &quot;&quot;;
+var reason = &quot;Request could not be handled&quot;;
+var method = &quot;POST&quot;;
+var x_radius_splash_username = &quot;&quot;;
+var x_radius_splash_session_id = &quot;0&quot;;
+var x_rs_ocsp_error = &quot;&quot;;
+var x_virus_id = &quot;&quot;;
+var x_virus_details = &quot;&quot;;
+var empty = &quot;&quot;;
+var ssl_failure_reason = &quot;&quot;;
+var server_connection_socket_errno = &quot;Operation timed out&quot;;
+var icap_error_details = &quot;&quot;;
+var redirect_location = &quot;&quot;;
+var exception_rationale = &quot;&quot;;
+var exception_request_rationale = &quot;&quot;;
+
+window.onload = function() {
+    var externalLinks = function() {
+        if (!document.getElementsByTagName) return;
+        var anchors = document.getElementsByTagName(&quot;a&quot;);
+        for (var i=0; i&lt;anchors.length; i++) {
+            var anchor = anchors[i];
+            var rel = anchor.getAttribute(&quot;rel&quot;) || &apos;&apos;;
+            if (anchor.getAttribute(&quot;href&quot;) &amp;&amp; rel === &quot;external&quot;) {
+                anchor.target = &quot;_blank&quot;;
+            }
+            anchor.setAttribute(&quot;rel&quot;, rel + &quot; noreferrer&quot;);
+        }
+    };
+    externalLinks();
+
+    if (errors.length != 0 ) {
+        var localize = function() {
+            var find = $(&quot;[localize]&quot;);
+
+            $(find).each(function(){
+                var transTxtKey;
+                var key=$(this).attr(&apos;localize&apos;).replace(&quot;[&quot;,&quot;&quot;).replace(&quot;]&quot;,&quot;&quot;);
+                var keys=key.split(/\./);
+
+                if (keys.length &lt; 1) {
+                    return false;
+                }
+
+                var textObject = errors;
+                while(keys.length &gt; 0 &amp;&amp; textObject) {
+                    textObject = textObject[keys.shift()];
+                }
+                transTxtKey = textObject;
+
+                if(transTxtKey) {
+                    $(this).html(transTxtKey);
+                }
+            });
+
+        };
+        localize();
+    }
+
+// once localized, replace the non-runtime evaluated variables with live content.
+    var fixprxevals = function() {
+// todo: drive this from an array or tidy it up.
+        $(&quot;a#coach-continue-url&quot;).attr(&quot;href&quot;, coach_continue_url);
+        $(&quot;#application-name&quot;).text(&apos;\&quot;&apos; + application_name + &apos;\&quot;&apos;);
+        $(&quot;#application-action-name&quot;).text(&apos;\&quot;&apos; + application_action_name + &apos;\&quot;&apos;);
+        $(&quot;#response-categories&quot;).text(&apos;\&quot;&apos; + response_categories + &apos;\&quot;&apos;);
+        $(&quot;#url-host&quot;).text(&apos;\&quot;&apos; + url_host + &apos;\&quot;&apos;);
+        $(&quot;#url-address&quot;).text(&apos;\&quot;&apos; + url_address + &apos;\&quot;&apos;);
+        $(&quot;#url-port&quot;).text(&apos;\&quot;&apos; + url_port + &apos;\&quot;&apos;);
+        $(&quot;#client_address&quot;).text(&apos;\&quot;&apos; + client_address + &apos;\&quot;&apos;);
+        $(&quot;#category-review-url&quot;).html(&apos;&lt;a href=&quot;&apos; + category_review_url + &apos;&quot;&gt;http://sitereview.bluecoat.com&lt;/a&gt;&apos;);
+        $(&quot;#last-error&quot;).text(&apos;\&quot;&apos; + last_error + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-action-url&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_action_url + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-challenge-string&quot;).text(&apos;\&quot;&apos; + x_auth_challenge_string + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-domain-field&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_domain_field + &apos;\&quot;&apos;);
+        $(&quot;#cs-username&quot;).text(&apos;\&quot;&apos; + cs_username + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-request-id&quot;).text(&apos;\&quot;&apos; + x_cs_auth_request_id + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-private-challenge-state&quot;).text(&apos;\&quot;&apos; + x_auth_private_challenge_state + &apos;\&quot;&apos;);
+        $(&quot;#sc-auth-status&quot;).text(&apos;\&quot;&apos; + sc_auth_status + &apos;\&quot;&apos;);
+        $(&quot;#reason&quot;).text(&apos;\&quot;&apos; + reason + &apos;\&quot;&apos;);
+        $(&quot;#method&quot;).text(&apos;\&quot;&apos; + method + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-username&quot;).text(&apos;\&quot;&apos; + x_radius_splash_username + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-session-id&quot;).text(&apos;\&quot;&apos; + x_radius_splash_session_id + &apos;\&quot;&apos;);
+        $(&quot;#x-rs-ocsp-error&quot;).text(&apos;\&quot;&apos; + x_rs_ocsp_error + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-id&quot;).text(&apos;\&quot;&apos; + x_virus_id + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-details&quot;).text(&apos;\&quot;&apos; + x_virus_details + &apos;\&quot;&apos;);
+//    $(&quot;#proxy-sg-private-challenge-state&quot;).attr(&quot;value&quot;, proxy-sg-private-challenge-state);
+//    $(&quot;#proxy-sg-request-id&quot;).attr(&quot;value&quot;, proxy_sg_request_id);
+        $(&quot;#cpUsername&quot;).attr(&quot;value&quot;, cs_username);
+        $(&quot;#ssl-failure-reason&quot;).text(&apos;\&quot;&apos; + ssl_failure_reason + &apos;\&quot;&apos;);
+        $(&quot;#server-connection-socket-errno&quot;).text(&apos;\&quot;&apos; + server_connection_socket_errno + &apos;\&quot;&apos;);
+        $(&quot;#icap-error-details&quot;).text(&apos;\&quot;&apos; + icap_error_details + &apos;\&quot;&apos;);
+        $(&quot;a#redirect-location&quot;).attr(&quot;href&quot;, redirect_location);
+        $(&quot;a#site-review&quot;).attr(&quot;href&quot;, &quot;http://sitereview.bluecoat.com/index.jsp?referrer=bccloud&amp;url=&quot; + url_host);
+        $(&quot;#bcExceptionRationale&quot;).text(exception_request_rationale || exception_rationale || &quot;N/A&quot;);
+    };
+    fixprxevals();
+
+    $(&quot;#pwinput&quot;).keypress(function(e) {
+        if(e.keyCode==13) { return false; }
+    });
+
+    $(&quot;#pwinput&quot;).focus();
+    $(&quot;#sesame&quot;).click(function() {
+        var supplied = $(&quot;#pwinput&quot;).attr(&quot;value&quot;);
+        var hashed = $.md5(supplied).toUpperCase();
+        if(supplied) {
+            valpw(hashed); return false;
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors[&quot;validations&quot;].password_override.notSupplied;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.notSupplied]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    });
+
+    var detailsShowing = false;
+    $(&apos;.detFlip&apos;).click(function() {
+        if(!detailsShowing){
+            $(&quot;#detMore&quot;).hide();
+            $(&quot;#detLess&quot;).show();
+            $(&quot;#additionalInfo&quot;).show(&apos;fast&apos;);
+        } else {
+            $(&quot;#detMore&quot;).show();
+            $(&quot;#detLess&quot;).hide();
+            $(&quot;#additionalInfo&quot;).hide(&apos;fast&apos;);
+        }
+        detailsShowing = !detailsShowing;
+    });
+    $(&quot;#pwinput&quot;).click(function() {
+        $(&quot;#errorNotify&quot;).hide(&quot;fast&quot;);
+        $(&quot;#pwinput&quot;).removeClass(&quot;error&quot;);
+        this.value = &quot;&quot;;
+    });
+
+    var goTo = function(url) {
+        var a = document.createElement(&quot;a&quot;);
+        if(!a.click) {
+            window.location=url;
+            return;
+        }
+        a.setAttribute(&quot;href&quot;, url);
+        a.style.display = &quot;block&quot;;
+        $(&quot;body&quot;).append(a);
+        a.click();
+    };
+
+    function valpw(hashed) {
+        if(hashed==hashedpw) {
+            goTo(jumpto);
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors.validations.password_override.incorrectPassword;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.incorrectPassword]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    }
+
+    if($(&apos;#contactNameValue&apos;).text() === &apos;&apos;) $(&apos;#contactName&apos;).hide();
+    if($(&apos;#contactPhoneValue&apos;).text() === &apos;&apos;) $(&apos;#contactPhone&apos;).hide();
+    if($(&apos;#contactEmailValue&apos;).text() === &apos;&apos;) $(&apos;#contactEmail&apos;).hide();
+
+    if (String.prototype.trim &amp;&amp; [&quot;unlicensed&quot;, &quot;unavailable&quot;, &quot;none&quot;, &quot;invalid&quot;].indexOf($(&quot;#addClientGeolocation .additional&quot;).text().trim().toLowerCase()) !== -1) {
+        $(&quot;#addClientGeolocation&quot;).hide();
+    }
+};
+
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery-1.5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//notify.bluecoat.com/ex/5.0/js/lang/exceptions.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery.md5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+
+        &lt;/script&gt;
+    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+    &lt;!-- This loads default Symantec styling --&gt;
+   	&lt;style type=&quot;text/css&quot;&gt;
+       #logo a {
+    background-image: url(&quot;//portal.threatpulse.com/ex/5.0/img/logos/symantec-logo.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+    &lt;/style&gt;
+    &lt;!-- This will load the default Symantec error page styling, as configured in the Symantec portal --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//portal.threatpulse.com/ex/5.0/css/style0204.css&quot; /&gt;
+    &lt;!-- This will load the Symantec favicon --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;//portal.threatpulse.com/ex/5.0/img/favicon.ico&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;bodydrop&quot;&gt;
+&lt;div id=&quot;outer&quot;&gt;
+    &lt;div id=&quot;container&quot; class=&quot;int curved&quot;&gt;
+        &lt;div id=&quot;branding&quot;&gt;
+            &lt;div class=&quot;curved&quot; id=&quot;logo&quot;&gt;
+                &lt;a rel=&quot;external&quot; title=&quot;Symantec&quot; href=&quot;http://www.symantec.com/&quot;&gt;Symantec&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;content&quot;&gt;
+            &lt;div id=&quot;bodyCopy&quot;&gt;
+                &lt;div id=&quot;exceptionDetails&quot; class=&quot;int&quot;&gt;
+                    &lt;h1 id=&quot;doctitle&quot; localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/h1&gt;
+
+
+
+
+                    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         WARNING: DO NOT REMOVE!
+                         THIS SECTION IS USED TO INJECT KEY PAGE FUNCTIONALITY INCLUDING:
+                           - EXCEPTION DETAILS (DESCRIPTION)
+                           - INPUT TEXT FIELD FOR PASSWORD OVERRIDE
+                           - MESSAGE AND PROCEED BUTTON FOR COACHING
+                         REMOVING THIS WILL PREVENT BLOCK PAGES FROM WORKING
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+                    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+                        &lt;div id=&quot;message&quot;&gt;
+                            &lt;div localize=&quot;[tcp_error.message]&quot;&gt;
+                                Your request could not be completed. &lt;p&gt;The URL you requested at 52.70.143.199, could not be reached by the network. The site&apos;s server may be down or experiencing a high level of traffic.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+                    &lt;div id=&quot;help&quot;&gt;
+                        &lt;div localize=&quot;[tcp_error.help]&quot;&gt;
+                            The Web Server may be down, too busy, or experiencing other problems preventing it from responding to requests. You may wish to try again at a later time.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;p id=&quot;httpCode&quot;&gt;&lt;span localize=&quot;[techSupport]&quot;&gt;Tech support information&lt;/span&gt;: tcp_error
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detMore&quot; localize=&quot;[more]&quot;&gt;more&lt;/span&gt;&lt;/a&gt;
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detLess&quot; localize=&quot;[less]&quot;&gt;less&lt;/span&gt;&lt;/a&gt;
+                    &lt;/p&gt;
+
+                    &lt;p&gt;
+                        &lt;span localize=&quot;[contact]&quot;&gt;For assistance, contact your network support team.&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactName&quot;&gt;
+                        &lt;span localize=&quot;[name]&quot;&gt;Name&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactNameValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactPhone&quot;&gt;
+                        &lt;span localize=&quot;[phone]&quot;&gt;Phone&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactPhoneValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactEmail&quot;&gt;
+                        &lt;span localize=&quot;[email]&quot;&gt;Email&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactEmailValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;additionalInfo&quot; class=&quot;int curved&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li id=&quot;addIP&quot;&gt;&lt;span localize=&quot;[clientIP]&quot;&gt;Client IP:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;97.11.38.151
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserName&quot;&gt;&lt;span localize=&quot;[username]&quot;&gt;Username:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;Unauthenticated User
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addURL&quot;&gt;&lt;span localize=&quot;[URL]&quot;&gt;URL:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;http://52.70.143.199:4444/wd/hub/session
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserAgent&quot;&gt;&lt;span localize=&quot;[userAgent]&quot;&gt;User Agent:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;okhttp/3.9.1
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addGeolocation&quot;&gt;&lt;span&gt;Client Geolocation:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;Unavailable
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addErrorId&quot;&gt;&lt;span&gt;Error ID:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;&lt;span id=&apos;bcExceptionRationale&apos;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;footer&quot;&gt;
+            &lt;div id=&quot;copyright&quot;&gt;&amp;#169; 2018 Symantec&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;IBM651-PC0BY5PB&apos;, ip: &apos;97.11.38.151&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:145)
+	at com.app.utilities.Driver.getDriver(Driver.java:31)
+	at com.app.step_definitions.Hooks.setUp(Hooks.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:84)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>300</td>
+<td>com.app.runners.SmokeTestRunner@71423665</td></tr>
+<tr>
+<td title='com.app.runners.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.app.runners.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Collaboration menu options", "SugarCRM menu options"<br/>
+<a href="#Output-776484396" onClick='toggleBox("Output-776484396", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-776484396" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-776484396">
+<div "result">I logged into suiteCRM (SKIPPED)</div><br/>
+<div "result">I hover over the Collaboration menu (SKIPPED)</div><br/>
+<div "result">following menu options should be visible for Collaboration: (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;!-- Note: It is strongly recommended that you do NOT make large changes to this file. Changing DOM structure or classes may prevent
+         the page from functioning correctly. Especially important pieces have been marked as such with comments
+         and should not be changed for any reason. --&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;referrer&quot; content=&quot;never&quot; /&gt;
+    &lt;title localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/title&gt;
+
+
+
+
+    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        WARNING: DO NOT REMOVE!
+        THIS SECTION LOADS ALL PAGE FUNCTIONALITY
+        REMOVING THIS WILL PREVENT BLOCK PAGES FROM FUNCTIONING CORRECTLY
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            // evaluate these on the proxy and make them available as js vars...
+var hashedpw = &quot;&quot;;
+var jumpto = &quot; &quot;;
+
+var coach_continue_url = &quot; &quot;;
+var application_name = &quot;none&quot;;
+var application_action_name = &quot;-&quot;;
+var response_categories = &quot;Uncategorized&quot;;
+var url_host = &quot;52.70.143.199&quot;;
+var url_address = &quot;52.70.143.199&quot;;
+var url_port = &quot;4444&quot;;
+var client_address = &quot;97.11.38.151&quot;;
+var category_review_url = &quot;http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&amp;url=http://52.70.143.199:4444/wd/hub/session&quot;;
+var last_error = &quot;&quot;;
+var x_cs_auth_form_action_url = &quot;http://www.cfauth.com/?bcfru=aHR0cDovLzUyLjcwLjE0My4xOTk6NDQ0NC93ZC9odWIvc2Vzc2lvbg==&quot;;
+var x_auth_challenge_string = &quot;&quot;;
+var x_cs_auth_form_domain_field = &quot;&quot;;
+var cs_username = &quot;Unauthenticated User&quot;;
+var x_cs_auth_request_id = &quot;&quot;;
+var x_auth_private_challenge_state = &quot;&quot;;
+var sc_auth_status = &quot;&quot;;
+var reason = &quot;Request could not be handled&quot;;
+var method = &quot;POST&quot;;
+var x_radius_splash_username = &quot;&quot;;
+var x_radius_splash_session_id = &quot;0&quot;;
+var x_rs_ocsp_error = &quot;&quot;;
+var x_virus_id = &quot;&quot;;
+var x_virus_details = &quot;&quot;;
+var empty = &quot;&quot;;
+var ssl_failure_reason = &quot;&quot;;
+var server_connection_socket_errno = &quot;Operation timed out&quot;;
+var icap_error_details = &quot;&quot;;
+var redirect_location = &quot;&quot;;
+var exception_rationale = &quot;&quot;;
+var exception_request_rationale = &quot;&quot;;
+
+window.onload = function() {
+    var externalLinks = function() {
+        if (!document.getElementsByTagName) return;
+        var anchors = document.getElementsByTagName(&quot;a&quot;);
+        for (var i=0; i&lt;anchors.length; i++) {
+            var anchor = anchors[i];
+            var rel = anchor.getAttribute(&quot;rel&quot;) || &apos;&apos;;
+            if (anchor.getAttribute(&quot;href&quot;) &amp;&amp; rel === &quot;external&quot;) {
+                anchor.target = &quot;_blank&quot;;
+            }
+            anchor.setAttribute(&quot;rel&quot;, rel + &quot; noreferrer&quot;);
+        }
+    };
+    externalLinks();
+
+    if (errors.length != 0 ) {
+        var localize = function() {
+            var find = $(&quot;[localize]&quot;);
+
+            $(find).each(function(){
+                var transTxtKey;
+                var key=$(this).attr(&apos;localize&apos;).replace(&quot;[&quot;,&quot;&quot;).replace(&quot;]&quot;,&quot;&quot;);
+                var keys=key.split(/\./);
+
+                if (keys.length &lt; 1) {
+                    return false;
+                }
+
+                var textObject = errors;
+                while(keys.length &gt; 0 &amp;&amp; textObject) {
+                    textObject = textObject[keys.shift()];
+                }
+                transTxtKey = textObject;
+
+                if(transTxtKey) {
+                    $(this).html(transTxtKey);
+                }
+            });
+
+        };
+        localize();
+    }
+
+// once localized, replace the non-runtime evaluated variables with live content.
+    var fixprxevals = function() {
+// todo: drive this from an array or tidy it up.
+        $(&quot;a#coach-continue-url&quot;).attr(&quot;href&quot;, coach_continue_url);
+        $(&quot;#application-name&quot;).text(&apos;\&quot;&apos; + application_name + &apos;\&quot;&apos;);
+        $(&quot;#application-action-name&quot;).text(&apos;\&quot;&apos; + application_action_name + &apos;\&quot;&apos;);
+        $(&quot;#response-categories&quot;).text(&apos;\&quot;&apos; + response_categories + &apos;\&quot;&apos;);
+        $(&quot;#url-host&quot;).text(&apos;\&quot;&apos; + url_host + &apos;\&quot;&apos;);
+        $(&quot;#url-address&quot;).text(&apos;\&quot;&apos; + url_address + &apos;\&quot;&apos;);
+        $(&quot;#url-port&quot;).text(&apos;\&quot;&apos; + url_port + &apos;\&quot;&apos;);
+        $(&quot;#client_address&quot;).text(&apos;\&quot;&apos; + client_address + &apos;\&quot;&apos;);
+        $(&quot;#category-review-url&quot;).html(&apos;&lt;a href=&quot;&apos; + category_review_url + &apos;&quot;&gt;http://sitereview.bluecoat.com&lt;/a&gt;&apos;);
+        $(&quot;#last-error&quot;).text(&apos;\&quot;&apos; + last_error + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-action-url&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_action_url + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-challenge-string&quot;).text(&apos;\&quot;&apos; + x_auth_challenge_string + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-domain-field&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_domain_field + &apos;\&quot;&apos;);
+        $(&quot;#cs-username&quot;).text(&apos;\&quot;&apos; + cs_username + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-request-id&quot;).text(&apos;\&quot;&apos; + x_cs_auth_request_id + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-private-challenge-state&quot;).text(&apos;\&quot;&apos; + x_auth_private_challenge_state + &apos;\&quot;&apos;);
+        $(&quot;#sc-auth-status&quot;).text(&apos;\&quot;&apos; + sc_auth_status + &apos;\&quot;&apos;);
+        $(&quot;#reason&quot;).text(&apos;\&quot;&apos; + reason + &apos;\&quot;&apos;);
+        $(&quot;#method&quot;).text(&apos;\&quot;&apos; + method + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-username&quot;).text(&apos;\&quot;&apos; + x_radius_splash_username + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-session-id&quot;).text(&apos;\&quot;&apos; + x_radius_splash_session_id + &apos;\&quot;&apos;);
+        $(&quot;#x-rs-ocsp-error&quot;).text(&apos;\&quot;&apos; + x_rs_ocsp_error + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-id&quot;).text(&apos;\&quot;&apos; + x_virus_id + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-details&quot;).text(&apos;\&quot;&apos; + x_virus_details + &apos;\&quot;&apos;);
+//    $(&quot;#proxy-sg-private-challenge-state&quot;).attr(&quot;value&quot;, proxy-sg-private-challenge-state);
+//    $(&quot;#proxy-sg-request-id&quot;).attr(&quot;value&quot;, proxy_sg_request_id);
+        $(&quot;#cpUsername&quot;).attr(&quot;value&quot;, cs_username);
+        $(&quot;#ssl-failure-reason&quot;).text(&apos;\&quot;&apos; + ssl_failure_reason + &apos;\&quot;&apos;);
+        $(&quot;#server-connection-socket-errno&quot;).text(&apos;\&quot;&apos; + server_connection_socket_errno + &apos;\&quot;&apos;);
+        $(&quot;#icap-error-details&quot;).text(&apos;\&quot;&apos; + icap_error_details + &apos;\&quot;&apos;);
+        $(&quot;a#redirect-location&quot;).attr(&quot;href&quot;, redirect_location);
+        $(&quot;a#site-review&quot;).attr(&quot;href&quot;, &quot;http://sitereview.bluecoat.com/index.jsp?referrer=bccloud&amp;url=&quot; + url_host);
+        $(&quot;#bcExceptionRationale&quot;).text(exception_request_rationale || exception_rationale || &quot;N/A&quot;);
+    };
+    fixprxevals();
+
+    $(&quot;#pwinput&quot;).keypress(function(e) {
+        if(e.keyCode==13) { return false; }
+    });
+
+    $(&quot;#pwinput&quot;).focus();
+    $(&quot;#sesame&quot;).click(function() {
+        var supplied = $(&quot;#pwinput&quot;).attr(&quot;value&quot;);
+        var hashed = $.md5(supplied).toUpperCase();
+        if(supplied) {
+            valpw(hashed); return false;
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors[&quot;validations&quot;].password_override.notSupplied;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.notSupplied]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    });
+
+    var detailsShowing = false;
+    $(&apos;.detFlip&apos;).click(function() {
+        if(!detailsShowing){
+            $(&quot;#detMore&quot;).hide();
+            $(&quot;#detLess&quot;).show();
+            $(&quot;#additionalInfo&quot;).show(&apos;fast&apos;);
+        } else {
+            $(&quot;#detMore&quot;).show();
+            $(&quot;#detLess&quot;).hide();
+            $(&quot;#additionalInfo&quot;).hide(&apos;fast&apos;);
+        }
+        detailsShowing = !detailsShowing;
+    });
+    $(&quot;#pwinput&quot;).click(function() {
+        $(&quot;#errorNotify&quot;).hide(&quot;fast&quot;);
+        $(&quot;#pwinput&quot;).removeClass(&quot;error&quot;);
+        this.value = &quot;&quot;;
+    });
+
+    var goTo = function(url) {
+        var a = document.createElement(&quot;a&quot;);
+        if(!a.click) {
+            window.location=url;
+            return;
+        }
+        a.setAttribute(&quot;href&quot;, url);
+        a.style.display = &quot;block&quot;;
+        $(&quot;body&quot;).append(a);
+        a.click();
+    };
+
+    function valpw(hashed) {
+        if(hashed==hashedpw) {
+            goTo(jumpto);
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors.validations.password_override.incorrectPassword;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.incorrectPassword]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    }
+
+    if($(&apos;#contactNameValue&apos;).text() === &apos;&apos;) $(&apos;#contactName&apos;).hide();
+    if($(&apos;#contactPhoneValue&apos;).text() === &apos;&apos;) $(&apos;#contactPhone&apos;).hide();
+    if($(&apos;#contactEmailValue&apos;).text() === &apos;&apos;) $(&apos;#contactEmail&apos;).hide();
+
+    if (String.prototype.trim &amp;&amp; [&quot;unlicensed&quot;, &quot;unavailable&quot;, &quot;none&quot;, &quot;invalid&quot;].indexOf($(&quot;#addClientGeolocation .additional&quot;).text().trim().toLowerCase()) !== -1) {
+        $(&quot;#addClientGeolocation&quot;).hide();
+    }
+};
+
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery-1.5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//notify.bluecoat.com/ex/5.0/js/lang/exceptions.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery.md5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+
+        &lt;/script&gt;
+    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+    &lt;!-- This loads default Symantec styling --&gt;
+   	&lt;style type=&quot;text/css&quot;&gt;
+       #logo a {
+    background-image: url(&quot;//portal.threatpulse.com/ex/5.0/img/logos/symantec-logo.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+    &lt;/style&gt;
+    &lt;!-- This will load the default Symantec error page styling, as configured in the Symantec portal --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//portal.threatpulse.com/ex/5.0/css/style0204.css&quot; /&gt;
+    &lt;!-- This will load the Symantec favicon --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;//portal.threatpulse.com/ex/5.0/img/favicon.ico&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;bodydrop&quot;&gt;
+&lt;div id=&quot;outer&quot;&gt;
+    &lt;div id=&quot;container&quot; class=&quot;int curved&quot;&gt;
+        &lt;div id=&quot;branding&quot;&gt;
+            &lt;div class=&quot;curved&quot; id=&quot;logo&quot;&gt;
+                &lt;a rel=&quot;external&quot; title=&quot;Symantec&quot; href=&quot;http://www.symantec.com/&quot;&gt;Symantec&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;content&quot;&gt;
+            &lt;div id=&quot;bodyCopy&quot;&gt;
+                &lt;div id=&quot;exceptionDetails&quot; class=&quot;int&quot;&gt;
+                    &lt;h1 id=&quot;doctitle&quot; localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/h1&gt;
+
+
+
+
+                    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         WARNING: DO NOT REMOVE!
+                         THIS SECTION IS USED TO INJECT KEY PAGE FUNCTIONALITY INCLUDING:
+                           - EXCEPTION DETAILS (DESCRIPTION)
+                           - INPUT TEXT FIELD FOR PASSWORD OVERRIDE
+                           - MESSAGE AND PROCEED BUTTON FOR COACHING
+                         REMOVING THIS WILL PREVENT BLOCK PAGES FROM WORKING
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+                    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+                        &lt;div id=&quot;message&quot;&gt;
+                            &lt;div localize=&quot;[tcp_error.message]&quot;&gt;
+                                Your request could not be completed. &lt;p&gt;The URL you requested at 52.70.143.199, could not be reached by the network. The site&apos;s server may be down or experiencing a high level of traffic.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+                    &lt;div id=&quot;help&quot;&gt;
+                        &lt;div localize=&quot;[tcp_error.help]&quot;&gt;
+                            The Web Server may be down, too busy, or experiencing other problems preventing it from responding to requests. You may wish to try again at a later time.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;p id=&quot;httpCode&quot;&gt;&lt;span localize=&quot;[techSupport]&quot;&gt;Tech support information&lt;/span&gt;: tcp_error
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detMore&quot; localize=&quot;[more]&quot;&gt;more&lt;/span&gt;&lt;/a&gt;
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detLess&quot; localize=&quot;[less]&quot;&gt;less&lt;/span&gt;&lt;/a&gt;
+                    &lt;/p&gt;
+
+                    &lt;p&gt;
+                        &lt;span localize=&quot;[contact]&quot;&gt;For assistance, contact your network support team.&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactName&quot;&gt;
+                        &lt;span localize=&quot;[name]&quot;&gt;Name&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactNameValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactPhone&quot;&gt;
+                        &lt;span localize=&quot;[phone]&quot;&gt;Phone&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactPhoneValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactEmail&quot;&gt;
+                        &lt;span localize=&quot;[email]&quot;&gt;Email&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactEmailValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;additionalInfo&quot; class=&quot;int curved&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li id=&quot;addIP&quot;&gt;&lt;span localize=&quot;[clientIP]&quot;&gt;Client IP:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;97.11.38.151
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserName&quot;&gt;&lt;span localize=&quot;[username]&quot;&gt;Username:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;Unauthenticated User
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addURL&quot;&gt;&lt;span localize=&quot;[URL]&quot;&gt;URL:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;http://52.70.143.199:4444/wd/hub/session
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserAgent&quot;&gt;&lt;span localize=&quot;[userAgent]&quot;&gt;User Agent:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;okhttp/3.9.1
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addGeolocation&quot;&gt;&lt;span&gt;Client Geolocation:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;Unavailable
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addErrorId&quot;&gt;&lt;span&gt;Error ID:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;&lt;span id=&apos;bcExceptionRationale&apos;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;footer&quot;&gt;
+            &lt;div id=&quot;copyright&quot;&gt;&amp;#169; 2018 Symantec&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;IBM651-PC0BY5PB&apos;, ip: &apos;97.11.38.151&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:145)
+	at com.app.utilities.Driver.getDriver(Driver.java:31)
+	at com.app.step_definitions.Hooks.setUp(Hooks.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:84)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace776484396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace776484396'><pre>org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;!-- Note: It is strongly recommended that you do NOT make large changes to this file. Changing DOM structure or classes may prevent
+         the page from functioning correctly. Especially important pieces have been marked as such with comments
+         and should not be changed for any reason. --&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;referrer&quot; content=&quot;never&quot; /&gt;
+    &lt;title localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/title&gt;
+
+
+
+
+    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        WARNING: DO NOT REMOVE!
+        THIS SECTION LOADS ALL PAGE FUNCTIONALITY
+        REMOVING THIS WILL PREVENT BLOCK PAGES FROM FUNCTIONING CORRECTLY
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            // evaluate these on the proxy and make them available as js vars...
+var hashedpw = &quot;&quot;;
+var jumpto = &quot; &quot;;
+
+var coach_continue_url = &quot; &quot;;
+var application_name = &quot;none&quot;;
+var application_action_name = &quot;-&quot;;
+var response_categories = &quot;Uncategorized&quot;;
+var url_host = &quot;52.70.143.199&quot;;
+var url_address = &quot;52.70.143.199&quot;;
+var url_port = &quot;4444&quot;;
+var client_address = &quot;97.11.38.151&quot;;
+var category_review_url = &quot;http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&amp;url=http://52.70.143.199:4444/wd/hub/session&quot;;
+var last_error = &quot;&quot;;
+var x_cs_auth_form_action_url = &quot;http://www.cfauth.com/?bcfru=aHR0cDovLzUyLjcwLjE0My4xOTk6NDQ0NC93ZC9odWIvc2Vzc2lvbg==&quot;;
+var x_auth_challenge_string = &quot;&quot;;
+var x_cs_auth_form_domain_field = &quot;&quot;;
+var cs_username = &quot;Unauthenticated User&quot;;
+var x_cs_auth_request_id = &quot;&quot;;
+var x_auth_private_challenge_state = &quot;&quot;;
+var sc_auth_status = &quot;&quot;;
+var reason = &quot;Request could not be handled&quot;;
+var method = &quot;POST&quot;;
+var x_radius_splash_username = &quot;&quot;;
+var x_radius_splash_session_id = &quot;0&quot;;
+var x_rs_ocsp_error = &quot;&quot;;
+var x_virus_id = &quot;&quot;;
+var x_virus_details = &quot;&quot;;
+var empty = &quot;&quot;;
+var ssl_failure_reason = &quot;&quot;;
+var server_connection_socket_errno = &quot;Operation timed out&quot;;
+var icap_error_details = &quot;&quot;;
+var redirect_location = &quot;&quot;;
+var exception_rationale = &quot;&quot;;
+var exception_request_rationale = &quot;&quot;;
+
+window.onload = function() {
+    var externalLinks = function() {
+        if (!document.getElementsByTagName) return;
+        var anchors = document.getElementsByTagName(&quot;a&quot;);
+        for (var i=0; i&lt;anchors.length; i++) {
+            var anchor = anchors[i];
+            var rel = anchor.getAttribute(&quot;rel&quot;) || &apos;&apos;;
+            if (anchor.getAttribute(&quot;href&quot;) &amp;&amp; rel === &quot;external&quot;) {
+                anchor.target = &quot;_blank&quot;;
+            }
+            anchor.setAttribute(&quot;rel&quot;, rel + &quot; noreferrer&quot;);
+        }
+    };
+    externalLinks();
+
+    if (errors.length != 0 ) {
+        var localize = function() {
+            var find = $(&quot;[localize]&quot;);
+
+            $(find).each(function(){
+                var transTxtKey;
+                var key=$(this).attr(&apos;localize&apos;).replace(&quot;[&quot;,&quot;&quot;).replace(&quot;]&quot;,&quot;&quot;);
+                var keys=key.split(/\./);
+
+                if (keys.length &lt; 1) {
+                    return false;
+                }
+
+                var textObject = errors;
+                while(keys.length &gt; 0 &amp;&amp; textObject) {
+                    textObject = textObject[keys.shift()];
+                }
+                transTxtKey = textObject;
+
+                if(transTxtKey) {
+                    $(this).html(transTxtKey);
+                }
+            });
+
+        };
+        localize();
+    }
+
+// once localized, replace the non-runtime evaluated variables with live content.
+    var fixprxevals = function() {
+// todo: drive this from an array or tidy it up.
+        $(&quot;a#coach-continue-url&quot;).attr(&quot;href&quot;, coach_continue_url);
+        $(&quot;#application-name&quot;).text(&apos;\&quot;&apos; + application_name + &apos;\&quot;&apos;);
+        $(&quot;#application-action-name&quot;).text(&apos;\&quot;&apos; + application_action_name + &apos;\&quot;&apos;);
+        $(&quot;#response-categories&quot;).text(&apos;\&quot;&apos; + response_categories + &apos;\&quot;&apos;);
+        $(&quot;#url-host&quot;).text(&apos;\&quot;&apos; + url_host + &apos;\&quot;&apos;);
+        $(&quot;#url-address&quot;).text(&apos;\&quot;&apos; + url_address + &apos;\&quot;&apos;);
+        $(&quot;#url-port&quot;).text(&apos;\&quot;&apos; + url_port + &apos;\&quot;&apos;);
+        $(&quot;#client_address&quot;).text(&apos;\&quot;&apos; + client_address + &apos;\&quot;&apos;);
+        $(&quot;#category-review-url&quot;).html(&apos;&lt;a href=&quot;&apos; + category_review_url + &apos;&quot;&gt;http://sitereview.bluecoat.com&lt;/a&gt;&apos;);
+        $(&quot;#last-error&quot;).text(&apos;\&quot;&apos; + last_error + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-action-url&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_action_url + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-challenge-string&quot;).text(&apos;\&quot;&apos; + x_auth_challenge_string + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-form-domain-field&quot;).text(&apos;\&quot;&apos; + x_cs_auth_form_domain_field + &apos;\&quot;&apos;);
+        $(&quot;#cs-username&quot;).text(&apos;\&quot;&apos; + cs_username + &apos;\&quot;&apos;);
+        $(&quot;#x-cs-auth-request-id&quot;).text(&apos;\&quot;&apos; + x_cs_auth_request_id + &apos;\&quot;&apos;);
+        $(&quot;#x-auth-private-challenge-state&quot;).text(&apos;\&quot;&apos; + x_auth_private_challenge_state + &apos;\&quot;&apos;);
+        $(&quot;#sc-auth-status&quot;).text(&apos;\&quot;&apos; + sc_auth_status + &apos;\&quot;&apos;);
+        $(&quot;#reason&quot;).text(&apos;\&quot;&apos; + reason + &apos;\&quot;&apos;);
+        $(&quot;#method&quot;).text(&apos;\&quot;&apos; + method + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-username&quot;).text(&apos;\&quot;&apos; + x_radius_splash_username + &apos;\&quot;&apos;);
+        $(&quot;#x-radius-splash-session-id&quot;).text(&apos;\&quot;&apos; + x_radius_splash_session_id + &apos;\&quot;&apos;);
+        $(&quot;#x-rs-ocsp-error&quot;).text(&apos;\&quot;&apos; + x_rs_ocsp_error + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-id&quot;).text(&apos;\&quot;&apos; + x_virus_id + &apos;\&quot;&apos;);
+        $(&quot;#x-virus-details&quot;).text(&apos;\&quot;&apos; + x_virus_details + &apos;\&quot;&apos;);
+//    $(&quot;#proxy-sg-private-challenge-state&quot;).attr(&quot;value&quot;, proxy-sg-private-challenge-state);
+//    $(&quot;#proxy-sg-request-id&quot;).attr(&quot;value&quot;, proxy_sg_request_id);
+        $(&quot;#cpUsername&quot;).attr(&quot;value&quot;, cs_username);
+        $(&quot;#ssl-failure-reason&quot;).text(&apos;\&quot;&apos; + ssl_failure_reason + &apos;\&quot;&apos;);
+        $(&quot;#server-connection-socket-errno&quot;).text(&apos;\&quot;&apos; + server_connection_socket_errno + &apos;\&quot;&apos;);
+        $(&quot;#icap-error-details&quot;).text(&apos;\&quot;&apos; + icap_error_details + &apos;\&quot;&apos;);
+        $(&quot;a#redirect-location&quot;).attr(&quot;href&quot;, redirect_location);
+        $(&quot;a#site-review&quot;).attr(&quot;href&quot;, &quot;http://sitereview.bluecoat.com/index.jsp?referrer=bccloud&amp;url=&quot; + url_host);
+        $(&quot;#bcExceptionRationale&quot;).text(exception_request_rationale || exception_rationale || &quot;N/A&quot;);
+    };
+    fixprxevals();
+
+    $(&quot;#pwinput&quot;).keypress(function(e) {
+        if(e.keyCode==13) { return false; }
+    });
+
+    $(&quot;#pwinput&quot;).focus();
+    $(&quot;#sesame&quot;).click(function() {
+        var supplied = $(&quot;#pwinput&quot;).attr(&quot;value&quot;);
+        var hashed = $.md5(supplied).toUpperCase();
+        if(supplied) {
+            valpw(hashed); return false;
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors[&quot;validations&quot;].password_override.notSupplied;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.notSupplied]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    });
+
+    var detailsShowing = false;
+    $(&apos;.detFlip&apos;).click(function() {
+        if(!detailsShowing){
+            $(&quot;#detMore&quot;).hide();
+            $(&quot;#detLess&quot;).show();
+            $(&quot;#additionalInfo&quot;).show(&apos;fast&apos;);
+        } else {
+            $(&quot;#detMore&quot;).show();
+            $(&quot;#detLess&quot;).hide();
+            $(&quot;#additionalInfo&quot;).hide(&apos;fast&apos;);
+        }
+        detailsShowing = !detailsShowing;
+    });
+    $(&quot;#pwinput&quot;).click(function() {
+        $(&quot;#errorNotify&quot;).hide(&quot;fast&quot;);
+        $(&quot;#pwinput&quot;).removeClass(&quot;error&quot;);
+        this.value = &quot;&quot;;
+    });
+
+    var goTo = function(url) {
+        var a = document.createElement(&quot;a&quot;);
+        if(!a.click) {
+            window.location=url;
+            return;
+        }
+        a.setAttribute(&quot;href&quot;, url);
+        a.style.display = &quot;block&quot;;
+        $(&quot;body&quot;).append(a);
+        a.click();
+    };
+
+    function valpw(hashed) {
+        if(hashed==hashedpw) {
+            goTo(jumpto);
+        } else {
+            $(&quot;#errorNotify&quot;).show(&quot;fast&quot;);
+            var trans = errors.validations.password_override.incorrectPassword;
+            $(&quot;#errorNotify&quot;).html(&quot;&lt;div localize=&apos;[validations.password_override.incorrectPassword]&apos;&gt;&quot; + trans + &quot;&lt;/div&gt;&quot;);
+            $(&quot;#pwinput&quot;).addClass(&quot;error&quot;);
+            return false;
+        }
+    }
+
+    if($(&apos;#contactNameValue&apos;).text() === &apos;&apos;) $(&apos;#contactName&apos;).hide();
+    if($(&apos;#contactPhoneValue&apos;).text() === &apos;&apos;) $(&apos;#contactPhone&apos;).hide();
+    if($(&apos;#contactEmailValue&apos;).text() === &apos;&apos;) $(&apos;#contactEmail&apos;).hide();
+
+    if (String.prototype.trim &amp;&amp; [&quot;unlicensed&quot;, &quot;unavailable&quot;, &quot;none&quot;, &quot;invalid&quot;].indexOf($(&quot;#addClientGeolocation .additional&quot;).text().trim().toLowerCase()) !== -1) {
+        $(&quot;#addClientGeolocation&quot;).hide();
+    }
+};
+
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery-1.5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//notify.bluecoat.com/ex/5.0/js/lang/exceptions.js&quot;&gt;&lt;\/script&gt;&apos;);
+document.writeln(&apos;&lt;script type=&quot;text/javascript&quot; src=&quot;//portal.threatpulse.com/ex/5.0/js/jquery.md5.min.js&quot;&gt;&lt;\/script&gt;&apos;);
+
+        &lt;/script&gt;
+    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+    &lt;!-- This loads default Symantec styling --&gt;
+   	&lt;style type=&quot;text/css&quot;&gt;
+       #logo a {
+    background-image: url(&quot;//portal.threatpulse.com/ex/5.0/img/logos/symantec-logo.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+    &lt;/style&gt;
+    &lt;!-- This will load the default Symantec error page styling, as configured in the Symantec portal --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//portal.threatpulse.com/ex/5.0/css/style0204.css&quot; /&gt;
+    &lt;!-- This will load the Symantec favicon --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;//portal.threatpulse.com/ex/5.0/img/favicon.ico&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;bodydrop&quot;&gt;
+&lt;div id=&quot;outer&quot;&gt;
+    &lt;div id=&quot;container&quot; class=&quot;int curved&quot;&gt;
+        &lt;div id=&quot;branding&quot;&gt;
+            &lt;div class=&quot;curved&quot; id=&quot;logo&quot;&gt;
+                &lt;a rel=&quot;external&quot; title=&quot;Symantec&quot; href=&quot;http://www.symantec.com/&quot;&gt;Symantec&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;content&quot;&gt;
+            &lt;div id=&quot;bodyCopy&quot;&gt;
+                &lt;div id=&quot;exceptionDetails&quot; class=&quot;int&quot;&gt;
+                    &lt;h1 id=&quot;doctitle&quot; localize=&quot;[tcp_error.httpMessage]&quot;&gt;Network Error&lt;/h1&gt;
+
+
+
+
+                    &lt;!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         WARNING: DO NOT REMOVE!
+                         THIS SECTION IS USED TO INJECT KEY PAGE FUNCTIONALITY INCLUDING:
+                           - EXCEPTION DETAILS (DESCRIPTION)
+                           - INPUT TEXT FIELD FOR PASSWORD OVERRIDE
+                           - MESSAGE AND PROCEED BUTTON FOR COACHING
+                         REMOVING THIS WILL PREVENT BLOCK PAGES FROM WORKING
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --&gt;
+                    &lt;!-- START --- DO NOT REMOVE --- START --&gt;
+                        &lt;div id=&quot;message&quot;&gt;
+                            &lt;div localize=&quot;[tcp_error.message]&quot;&gt;
+                                Your request could not be completed. &lt;p&gt;The URL you requested at 52.70.143.199, could not be reached by the network. The site&apos;s server may be down or experiencing a high level of traffic.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;!-- END --- DO NOT REMOVE --- END --&gt;
+
+
+
+
+                    &lt;div id=&quot;help&quot;&gt;
+                        &lt;div localize=&quot;[tcp_error.help]&quot;&gt;
+                            The Web Server may be down, too busy, or experiencing other problems preventing it from responding to requests. You may wish to try again at a later time.&lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;p id=&quot;httpCode&quot;&gt;&lt;span localize=&quot;[techSupport]&quot;&gt;Tech support information&lt;/span&gt;: tcp_error
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detMore&quot; localize=&quot;[more]&quot;&gt;more&lt;/span&gt;&lt;/a&gt;
+                        &lt;a class=&quot;detFlip&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;span id=&quot;detLess&quot; localize=&quot;[less]&quot;&gt;less&lt;/span&gt;&lt;/a&gt;
+                    &lt;/p&gt;
+
+                    &lt;p&gt;
+                        &lt;span localize=&quot;[contact]&quot;&gt;For assistance, contact your network support team.&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactName&quot;&gt;
+                        &lt;span localize=&quot;[name]&quot;&gt;Name&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactNameValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactPhone&quot;&gt;
+                        &lt;span localize=&quot;[phone]&quot;&gt;Phone&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactPhoneValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+
+                    &lt;p id=&quot;contactEmail&quot;&gt;
+                        &lt;span localize=&quot;[email]&quot;&gt;Email&lt;/span&gt;&lt;span&gt;:&amp;#160;&lt;/span&gt;&lt;span id=&quot;contactEmailValue&quot;&gt;&lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;additionalInfo&quot; class=&quot;int curved&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li id=&quot;addIP&quot;&gt;&lt;span localize=&quot;[clientIP]&quot;&gt;Client IP:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;97.11.38.151
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserName&quot;&gt;&lt;span localize=&quot;[username]&quot;&gt;Username:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;Unauthenticated User
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addURL&quot;&gt;&lt;span localize=&quot;[URL]&quot;&gt;URL:&lt;/span&gt; &lt;span class=&quot;additional&quot;&gt;http://52.70.143.199:4444/wd/hub/session
+                            &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li id=&quot;addUserAgent&quot;&gt;&lt;span localize=&quot;[userAgent]&quot;&gt;User Agent:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;okhttp/3.9.1
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addGeolocation&quot;&gt;&lt;span&gt;Client Geolocation:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;Unavailable
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li id=&quot;addErrorId&quot;&gt;&lt;span&gt;Error ID:&lt;/span&gt;
+                            &lt;span class=&quot;additional&quot;&gt;&lt;span id=&apos;bcExceptionRationale&apos;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;displayNone&quot;&gt;&amp;#160;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;footer&quot;&gt;
+            &lt;div id=&quot;copyright&quot;&gt;&amp;#169; 2018 Symantec&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;IBM651-PC0BY5PB&apos;, ip: &apos;97.11.38.151&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:145)
+	at com.app.utilities.Driver.getDriver(Driver.java:31)
+	at com.app.step_definitions.Hooks.setUp(Hooks.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:84)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>300</td>
+<td>com.app.runners.SmokeTestRunner@71423665</td></tr>
+</table><p>
+</body>
+</html>
